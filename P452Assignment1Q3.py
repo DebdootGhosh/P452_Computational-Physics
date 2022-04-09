@@ -9,7 +9,7 @@ import library as lib
 import math
 import matplotlib.pyplot as plt
 
-def AOO(x):
+def Af(x):
     m = len(x)
     n = int(math.sqrt(m))
     m2 =  0.04
@@ -49,11 +49,11 @@ def conjugate_grad( b, x=None):
     n = len(b)
     if not x:
         x = [1 for _ in range(len(b))]
-    r =lib.vector_subtraction(AOO(x),b)
+    r =lib.vector_subtraction(Af(x),b)
     p = [-r[i] for i in range(n)]
     r_k_norm = (lib.dotproduct(r, r))
     for i in range(2*n):
-        Ap = AOO(p)
+        Ap = Af(p)
         alpha = r_k_norm / lib.dotproduct(p, Ap)
         x = [x[i]+(alpha * p[i]) for i in range(n)]
         r = [r[i]+(alpha * Ap[i]) for i in range(n)]
