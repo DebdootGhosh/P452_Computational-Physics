@@ -394,8 +394,15 @@ def seidel(a , b):
         
         normx = dotproduct(x, x)**.5
         normxn = dotproduct(xnew, xnew)**.5
-        if  abs(normx-normxn)< 10**-5: 
-            print('Iteration No.', j)
+        residue = normxn
+        h = []
+        g =[]
+        h.append(residue)
+        g.append(k)
+
+        #print(h)
+        if  abs(normx-normxn)< 10**-4: 
+            print('Iteration No.', k)
             return x
         x = xnew  
         
@@ -417,18 +424,26 @@ def conjugate_grad(A, b, x=None):
     r =vector_subtraction(multiply(A, x),b)
     p = [-r[i] for i in range(n)]
     r_k_norm = (dotproduct(r, r))
-    for i in range(2*n):
+    for i in range(5*n):
         Ap = multiply(A, p)
         alpha = r_k_norm / dotproduct(p, Ap)
         x = [x[i]+(alpha * p[i]) for i in range(n)]
         r = [r[i]+(alpha * Ap[i]) for i in range(n)]
         r_kplus1_norm = (dotproduct(r, r))
         beta = r_kplus1_norm / r_k_norm
+        residue = r_kplus1_norm
+        h = []
+        g =[]
+        h.append(residue)
+        g.append(i)
+        #print(h)
         r_k_norm = r_kplus1_norm
-        if r_kplus1_norm < 1e-8:
-            print ('Itr:', i)
+        
+        if r_kplus1_norm < 1e-6:
+            #print ('Iteration No.', i)
             break
         p = [(beta * p[i]) - r[i] for i in range(n)]
+    print('Iteration No.', i)
     return x    
 
 
@@ -467,7 +482,14 @@ def jacobi_iteration(A,b,N=10000,x=None):
             
         normx = dotproduct(x, x)**.5
         normxn = dotproduct(xnew, xnew)**.5
-        if  abs(normx-normxn)< 10**-5: 
+        residue = normxn
+        h = []
+        g =[]
+        h.append(residue)
+        g.append(j)
+
+        #print(h)
+        if  abs(normx-normxn)< 10**-4: 
             print('Iteration No.', j)
             return x
         x = xnew    
