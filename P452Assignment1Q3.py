@@ -101,7 +101,7 @@ h = [77.41567947391056,6.928686949301374,2.294906092093678
 g =[1, 2, 3, 4, 5, 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,
     22,23,24,25,26,27,28,29,30,31,32,33,34]
 
-plt.title("residue Vs iteration no. plot for Gauss Seidel method (Q2)")  
+plt.title("residue Vs iteration no. plot for Conjugate Gradient method (Q3)")  
 plt.xlabel("iteration no.")  
 plt.ylabel("residue")
 plt.plot(g,h,'o', markersize='5',label='residue data point')
