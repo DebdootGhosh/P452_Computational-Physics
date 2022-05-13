@@ -66,7 +66,7 @@ def plot_Throwing(f,N):
     plt.legend()
     plt.show()
 
- 
+print('pi value from the throwing method',4*Throwing(circle , 10000))  
 # calling the functions and using the input we will get the answers
 print('No. of Steps\tarea ')
 print('------------------------------')
@@ -77,7 +77,12 @@ for i in range(1,101):
 
    
 plot_Throwing(circle, 10000)  
-
+'''
+(i)a = 1021, m=65.
+pi value from the throwing method 3.1712
+(ii)a = 16381 and m = 572
+pi value from the throwing method 3.1392.
+'''
 '''
 For throwing method (ii) a = 16381 and m = 572 gives better output(nearly 3.14)
 than (i) a = 1021, m=65. So I have taken (ii) for Question no. 3. I have attached 
