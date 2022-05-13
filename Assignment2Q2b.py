@@ -23,12 +23,12 @@ def linConMethod(Xo, m, a, c,
     return x
 
 
-y = linConMethod(1, 572, 16381, 0, 1000)
+y = linConMethod(1, 572, 16381, 0, 10000)
 #print(y)
 #y = linConMethod(1, 65, 1021, 0, 1000)                         
 
 def monte_carlo(f, a, b, n):
-    #y = linConMethod(1, 572, 16381, 0,1000)
+    #y = linConMethod(1, 572, 16381, 0,10000)
     x=[0 for i in range(n)]
     
     for i in range(n):
@@ -47,7 +47,7 @@ def monte_carlo(f, a, b, n):
 
 # defining the function
 f = lambda x: math.sqrt(1-x**2)
-
+print("value of pi by Monte Carlo method", 4*monte_carlo(f, 0, 1, 10000))
 print (" {:<8} {:<20} {:<10} ".format('i','pi','N'))
 
 # results are
@@ -57,6 +57,14 @@ for i in range (1,101):
      for  k, v in d.items():
           pi, N= v
           print ("{:<8} {:<20} {:<10} ".format(k, pi, N))   
+          
+'''
+(i) a = 1021, m=65 
+value of pi by Monte Carlo method 3.1602257057197076
+(ii) a = 16381 and m = 572 
+value of pi by Monte Carlo method 3.139458065117981
+'''          
+         
 '''
 For MonteCarlo method both (i) a = 1021, m=65 and (ii) a = 16381 and m = 572 
 give nearly same result. But (ii) is better as it gives values nearer to 3.14.
