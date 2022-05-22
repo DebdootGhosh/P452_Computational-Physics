@@ -166,37 +166,6 @@ Value of y(x=xn) found, integration successful
 runfile('C:/Users/hp/new/Assignment3Q2a.py', wdir='C:/Users/hp/new')
 Reloaded modules: library
 
-
-Enter step size h: 
-0.000001
-For h= 1e-06
------------
-
-Guess a value of y'(0) 
-78
-Value of y(x=xn) for the above guess 78.0= 0.00011445818673949584
-
-Guess a value of y'(0) lower than the previous guess
-67
-Value of y(x=xn) for the above guess 67.0= 9.831664734790418e-05
-
-Guess a value of y'(0) lower than the previous guess
-45
-Value of y(x=xn) for the above guess 45.0= 6.603356935098236e-05
-
-Guess a value of y'(0) lower than the previous guess
-34
-Value of y(x=xn) for the above guess 34.0= 4.9892029714596204e-05
-
-Guess a value of y'(0) lower than the previous guess
-18
-Value of y(x=xn) for the above guess 18.0= 2.6413427676963718e-05
-
-Guess a value of y'(0) lower than the previous guess
-8
-Value of y(x=xn) for the above guess 8.0= 1.1739301230999338e-05
-
-
 Enter step size h: 
 0.000001
 For h= 1e-06
@@ -214,28 +183,7 @@ Enter step size h:
 For h= 1e-05
 -----------
 
-Guess a value of y'(0) 
--88
-Value of y(x=xn) for the above guess -88.0= -0.002171457993981092
-
-Guess a value of y'(0) greater than the previous guess
--67
-Value of y(x=xn) for the above guess -67.0= -0.0016532691543010513
-
-Guess a value of y'(0) greater than the previous guess
--45
-Value of y(x=xn) for the above guess -45.0= -0.0011104046558416192
-
-Guess a value of y'(0) greater than the previous guess
--24
-Value of y(x=xn) for the above guess -24.0= -0.0005922158164053554
-
-Guess a value of y'(0) greater than the previous guess
--11
-Value of y(x=xn) for the above guess -11.0= -0.0002714322492476365
-
-Guess a value of y'(0) greater than the previous guess
-7
+Value of y(x=xn) for the above guess 7.0= 0.00017272961309398806
 Value of y(x=xn) for the above guess 7.0= 0.00017272961309398806
 Value of y(x=xn) found, integration successful
 
