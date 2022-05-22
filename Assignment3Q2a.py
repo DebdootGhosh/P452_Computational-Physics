@@ -197,7 +197,7 @@ Guess a value of y'(0) lower than the previous guess
 Value of y(x=xn) for the above guess 8.0= 1.1739301230999338e-05
 
 
-nter step size h: 
+Enter step size h: 
 0.000001
 For h= 1e-06
 -----------
